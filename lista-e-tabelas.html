@@ -66,14 +66,14 @@
         </ol>
         <h2>Tabelas</h2>
         <h3>Estrutura Básica de Uma Tabela</h3>
-        <table>
-            <tr>
-                <th>Nome</th>
+        <table><!-- Cria a tabela -->
+            <tr><!-- Linha da tabela - table row -->
+                <th>Nome</th><!-- Cabeçalho da tabela - table header -->
                 <th>Idade</th>
                 <th>Profissão</th>
             </tr>
             <tr>
-                <td>Ana</td>
+                <td>Ana</td><!-- Céluda da tabela - Table Data -->
                 <td>28</td>
                 <td>Engenheira</td>
             </tr>
@@ -82,6 +82,34 @@
                 <td>34</td>
                 <td>Desenvolvedor</td>
             </tr>
+        </table>
+        <h3>Estrutura Completa de uma Tabela</h3>
+        <table>
+            <caption>Lista de Funcionários</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Setor</th>
+                    <th>Salário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>Financeiro</td>
+                    <td>2.000€</td>
+                </tr>
+                <tr>
+                    <td>Paulo</td>
+                    <td>TI</td>
+                    <td>2.200€</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Dados atualizados em Março de 2026</td>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>

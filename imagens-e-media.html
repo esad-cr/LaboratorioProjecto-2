@@ -33,7 +33,7 @@
             <img src="imagens/imagem-grande.jpg" alt="Logo do HTML5">
         </picture>
 
-        <h2>Media</h2>
+        <h2>Media - Audio e Vídeo</h2>
         <h3>Audio - Sintaxe básica</h3>
         <audio controls>
             <source src="audio/musica.mp3" type="audio/mpeg">
@@ -41,7 +41,7 @@
             Seu navegador não suporta áudio HTML5.
         </audio>
 
-        <h3>Audio - Sintaxe básica</h3>
+        <h3>Audio - Sintaxe completa</h3>
         <audio controls autoplay loop muted>
             <source src="audio/musica.mp3" type="audio/mpeg">
             <source src="audio/musica.ogg" type="audio/ogg">   
@@ -56,5 +56,21 @@
                 <p>Incluir um texto alternativo dentro da tag <code> < audio > </code> para navegadores que não suportam áudio.</p>
             </li>
         </ol>
+
+        <h3>Vídeo - Sintaxe básica</h3>
+        <video controls width="640">
+            <source src="videos/video.mp4" type="video/mp4">
+            <source src="videos/video.webm" type="video/webm">
+            Seu navegador não suporta vídeo HTML5.
+        </video>
+        <h3>Vídeo - Sintaxe completa</h3>
+        <video controls autoplay loop muted width="640" poster="imagens/capa_video.jpg">
+            <source src="videos/video.mp4" type="video/mp4">
+            <source src="videos/video.webm" type="video/webm">
+            Seu navegador não suporta vídeo HTML5.
+        </video>
+        <h3>Vídeo - Incorporado</h3>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VIUXIuGg72c?si=yj-qtvWO5GpJi9eu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     </body>
 </html>

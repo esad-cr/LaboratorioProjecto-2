@@ -33,5 +33,28 @@
             <img src="imagens/imagem-grande.jpg" alt="Logo do HTML5">
         </picture>
 
+        <h2>Media</h2>
+        <h3>Audio - Sintaxe básica</h3>
+        <audio controls>
+            <source src="audio/musica.mp3" type="audio/mpeg">
+            <source src="audio/musica.ogg" type="audio/ogg">
+            Seu navegador não suporta áudio HTML5.
+        </audio>
+
+        <h3>Audio - Sintaxe básica</h3>
+        <audio controls autoplay loop muted>
+            <source src="audio/musica.mp3" type="audio/mpeg">
+            <source src="audio/musica.ogg" type="audio/ogg">   
+            Seu navegador não suporta áudio HTML5.
+        </audio>
+        <h4>Boas práticas</h4>
+        <ol>
+            <li>
+                <p>Colocar pelo menos dois formatos de áudio para compatibilidade (<code>.mp3</code> e <code>.ogg</code>).</p>
+            </li>
+            <li>
+                <p>Incluir um texto alternativo dentro da tag <code> < audio > </code> para navegadores que não suportam áudio.</p>
+            </li>
+        </ol>
     </body>
 </html>

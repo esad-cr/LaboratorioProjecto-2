@@ -26,7 +26,12 @@
             <li>Controle dimensões via CSS sempre que possível, mantendo o HTML limpo.</li>
         </ol>
 
-
+        <h3>PICTURE - imagens responsivas</h3>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/imagem-pequena.jpg">
+            <source media="(max-width: 1200px)" srcset="imagens/imagem-media.jpg">
+            <img src="imagens/imagem-grande.jpg" alt="Logo do HTML5">
+        </picture>
 
     </body>
 </html>

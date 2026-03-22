@@ -15,10 +15,30 @@
         <p>
             O elemento <code>&#x3C;canvas&#x3E;</code> permite desenhar gráficos, animações, jogos e outros elementos gráficos diretamente no navegador, utilizando JavaScript.
         </p>
-        <h3> Estrutura Básica</h3>
+        <h3>Estrutura Básica</h3>
         <canvas id="meuCanvas" width="500" height="300">
-            Seu navegador não suporta o elemento canvas (só é visível se o navegador não suportar o elemento canvas).
+            O navegador não suporta o elemento canvas (só é visível se o navegador não suportar o elemento canvas).
         </canvas>
+
+        <h3>Exemplo de um Desenho Simples</h3>
+            <canvas id="desenhoSimples" width="400" height="200">
+                O navegador não suporta o elemento canvas.
+            </canvas>
+
+            <script>
+                function draw() {
+                    const canvas = document.getElementById('desenhoSimples');
+                    const exemplo = canvas.getContext('2d');
+
+                    exemplo.fillStyle = 'orange'; 
+                    //A cor pode ser definida pelo seu nome ou pelo hexadecimal da cor.
+                    exemplo.fillRect(50, 20, 200, 150);
+                    // (coordenadaX , coordenadaY , largura , altura)
+                }
+                draw();
+            </script>
+
+
 
     </body>
 </html>

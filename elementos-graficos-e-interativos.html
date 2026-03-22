@@ -38,7 +38,24 @@
                 draw();
             </script>
 
+        <h3>Exemplo de uma sobreposição de objetos</h3>
+            <canvas id="sobreposicao" width="400" height="200">
+                O navegador não suporta o elemento canvas.
+            </canvas>
 
+            <script>
+                function draw() {
+                    const canvas = document.getElementById('sobreposicao');
+                    const ctx = canvas.getContext('2d');
+
+                    ctx.fillStyle = "rgb(200 0 0)";
+                    ctx.fillRect(20, 20, 50, 50);
+
+                    ctx.fillStyle = "rgb(0 0 200 / 50%)";
+                    ctx.fillRect(45, 45, 50, 50);
+                }
+                draw();
+            </script>
 
     </body>
 </html>

@@ -57,5 +57,22 @@
                 draw();
             </script>
 
+        <h3>Exemplo - Forma Rectangular</h3>
+            <canvas id="formaRect" width="400" height="200">
+                O navegador não suporta o elemento canvas.
+            </canvas>
+
+            <script>
+                function draw() {
+                    const canvas = document.getElementById("formaRect");
+                    const ctx = canvas.getContext("2d");
+
+                    ctx.fillRect(25, 25, 100, 100);
+                    ctx.clearRect(50, 50, 50, 50);
+                    ctx.strokeRect(60, 60, 30, 30);
+                    //Espessura do stroke
+                }
+                draw();
+            </script>
     </body>
 </html>
